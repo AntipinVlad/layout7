@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UIkit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Site logo -->
+        <section class="nav-bar uk-section-default">
+            <nav class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="" class="uk-margin-left" uk-icon="icon: uikit; ratio: 2"></a>
+                </div>
+                <!-- Navbar uikit -->
+                <div class="uk-navbar-right uk-visible@s">
+                    <ul class="uk-navbar-nav">
+                        <li><a class="uk-active" href="#">Home</a></li>
+                        <li><a href="#">Info</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header uk-text-center">Header</li>
+                                    <li class="uk-ctive"><a href="#"> Header Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="uk-nav-header uk-text-center">Block 2</li>
+                                    <li><a href="#">Item2</a></li>
+                                    <li><a href="#">Item3</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Us info</a></li>
+                                    <li><a href="#">link</a></li>
+                            </div>
+                        </li>
+                        <li><a href="#">Sing in</a></li>
+                        <li><a href="#">Sing up</a></li>
+                    </ul>
+                </div>
+                <!-- Nav button small large -->
+                <div class="uk-navbar-right uk-hidden@s uk-margin-right">
+                    <button class="uk-button uk-button-primary uk-button-small" type="button"
+                        uk-toggle="target: #offcanvas-push-menu"><span uk-icon="menu"></span></button>
+                    <div id="offcanvas-push-menu" uk-offcanvas="mode: push; overlay: true">
+                        <div class="uk-offcanvas-bar">
+                            <ul class="uk-nav uk-nav-default">
+                                <li class="uk-active"><a href="#">Home</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Info</a>
+                                    <ul class="uk-nav-sub">
+                                        <li class="uk-ctive"><a href="#"> Header Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item2</a></li>
+                                        <li><a href="#">Item3</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Us info</a></li>
+                                        <li><a href="#">link</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                    </ul>
+                                <li><a href="#">Sing in</a></li>
+                                <li><a href="#">Sing up</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Background image  -->
+            <div class="uk-section uk-background-cover" style="background-image: url(./img/img-3.png);">
+                <!-- header content -->
+                <div class="uk-child-width-1-1 uk-margin-large-top" uk-grid>
+                    <div>
+                        <div
+                            class="uk-overlay uk-overlay-default uk-text-center uk-width-1-2@s uk-width-1-1 uk-align-center">
+                            <h1>Welcome</H1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos quaerat
+                                exercitationem necessitatibus libero officiis aliquid doloremque dicta deleniti eum.</p>
+                        </div>
+                    </div>
+                    <div class="uk-align-center" uk-grid>
+                        <p class="uk-text-center uk-margin-large-bottom">
+                            <button class="uk-button uk-button-primary uk-margin-small-right" type="button"
+                                uk-toggle="target: #offcanvas-push">Primary</button>
+                            <button class="uk-button uk-button-danger uk-margin-small-left" type="button"
+                                uk-toggle="target: #modal-example">Secondary</button>
+                        </p>
+                        <!-- Offcanvas mode -->
+                        <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
+                            <div class="uk-offcanvas-bar">
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                <h3>PRIMARY</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
+                        <!-- This is the modal -->
+                        <div id="modal-example" uk-modal>
+                            <div class="uk-modal-dialog">
+                                <div class="uk-modal-header">
+                                    <h2 class="uk-modal-title">Secondary</h2>
+                                </div>
+                                <p class="uk-modal-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum. </p>
+                                <p class="uk-text-right uk-modal-footer">
+                                    <button class="uk-button uk-button-default uk-modal-close"
+                                        type="button">Cancel</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </header>
+    <main>
+        <section class="card-test uk-container uk-margin-xlarge-top   uk-margin-large-bottom">
+            <div class="uk-child-width-1-1 uk-text-center uk-margin-large-bottom" uk-grid>
+                <div class="uk-margin-remove-bottom">
+                    <h2>Card Item</h2>
+                </div>
+                <div class="uk-margin-small-top">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, position.</p>
+                </div>
+            </div>
+            <!-- Uikit card -->
+            <div class="uk-child-width-1-3@m uk-child-width-1-2@s  uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="60" height="60" src="./img/avatar.jpg">
+                                </div>
+                                <h3>Keit Smail</h3>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugit libero dolores
+                                expedita consequuntur rerum beatae optio officia corporis deleniti.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01,
+                                    2016</time></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="60" height="60" src="./img/avatar.jpg">
+                                </div>
+                                <h3>Keit Smail</h3>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugit libero dolores
+                                expedita consequuntur rerum beatae optio officia corporis deleniti.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01,
+                                    2016</time></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="60" height="60" src="./img/avatar.jpg">
+                                </div>
+                                <h3>Keit Smail</h3>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugit libero dolores
+                                expedita consequuntur rerum beatae optio officia corporis deleniti.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01,
+                                    2016</time></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="uk-section-muted uk-padding uk-margin-xlarge-top">
+            <div class="uk-container">
+                <div class="uk-child-width-1-1 uk-text-center  uk-margin-large-bottom" uk-grid>
+                    <div>
+                        <h2>Room image</h2>
+                    </div>
+                    <div>
+                        <p class="uk-width-1-2@m uk-width-1-1 uk-align-center">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Adipisci totam laborum eaque ea illo dolor odit perferendis dolores atque
+                            enim? Dolorum aspernatur suscipit unde doloremque reprehenderit corrupti perspiciatis
+                            inventore vitae!</p>
+                    </div>
+                </div>
+                <!-- Thumbnav -->
+                <div>
+                    <div class="uk-position-relative" uk-slideshow="animation: fade">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="img/room1.jpg" alt="img1" uk-cover>
+                            </li>
+                            <li>
+                                <img src="img/room2.jpg" alt="img2" uk-cover>
+                            </li>
+                            <li>
+                                <img src="img/room3.jpg" alt="img3" uk-cover>
+                            </li>
+                        </ul>
+                        <div class="uk-position-bottom-center uk-position-small">
+                            <ul class="uk-thumbnav">
+                                <li uk-slideshow-item="0"><a href="#"><img src="img/room1.jpg" width="100" alt=""></a>
+                                </li>
+                                <li uk-slideshow-item="1"><a href="#"><img src="img/room2.jpg" width="100" alt=""></a>
+                                </li>
+                                <li uk-slideshow-item="2"><a href="#"><img src="img/room3.jpg" width="100" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="uk-section-default uk-margin-xlarge-top uk-margin-xlarge-bottom">
+            <div class="uk-container">
+                <div class="uk-child-width-1-1 uk-text-center" uk-grid>
+                    <div>
+                        <h2>Image Case</h2>
+                    </div>
+                    <div class="uk-width-1-2@l uk-width-1-1 uk-align-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti explicabo nesciunt eaque
+                            omnis repellendus quam illum non blanditiis, soluta est.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-2@s"
+                    uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 250" uk-grid>
+                    <div>
+                        <a href="#">
+                            <!-- Image block -->
+                            <div class="uk-text-center">
+                                <!-- Transition -->
+                                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                    <img src="./img/room1.jpg" alt="">
+                                    <!-- Overlay -->
+                                    <div class="uk-position-center uk-overlay uk-overlay-primary uk-transition-fade">
+                                        <div class="uk-transition-slide-top-small a">
+                                            <h4 class="uk-margin-remove">Headline</h4>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom-small">
+                                            <h4 class="uk-margin-remove">Subheadline</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                    <img src="./img/room1.jpg" alt="">
+                                    <div class="uk-position-center uk-overlay uk-overlay-primary uk-transition-fade">
+                                        <div class="uk-transition-slide-top-small a">
+                                            <h4 class="uk-margin-remove">Headline</h4>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom-small">
+                                            <h4 class="uk-margin-remove">Subheadline</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                    <img src="./img/room1.jpg" alt="">
+                                    <div class="uk-position-center uk-overlay uk-overlay-primary uk-transition-fade">
+                                        <div class="uk-transition-slide-top-small a">
+                                            <h4 class="uk-margin-remove">Headline</h4>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom-small">
+                                            <h4 class="uk-margin-remove">Subheadline</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                    <img src="./img/room1.jpg" alt="">
+                                    <div class="uk-position-center uk-overlay uk-overlay-primary uk-transition-fade">
+                                        <div class="uk-transition-slide-top-small a">
+                                            <h4 class="uk-margin-remove">Headline</h4>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom-small">
+                                            <h4 class="uk-margin-remove">Subheadline</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                    <img src="./img/room1.jpg" alt="">
+                                    <div class="uk-position-center uk-overlay uk-overlay-primary uk-transition-fade">
+                                        <div class="uk-transition-slide-top-small a">
+                                            <h4 class="uk-margin-remove">Headline</h4>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom-small">
+                                            <h4 class="uk-margin-remove">Subheadline</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle uk-light" tabindex="0">
+                                    <img src="./img/room1.jpg" alt="">
+                                    <div class="uk-position-center uk-overlay uk-overlay-primary uk-transition-fade">
+                                        <div class="uk-transition-slide-top-small a">
+                                            <h4 class="uk-margin-remove">Headline</h4>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom-small">
+                                            <h4 class="uk-margin-remove">Subheadline</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="uk-section uk-section-muted">
+            <div class="uk-container">
+                <div class="uk-chilt-width-1-1 uk-align-center" uk-grid>
+                    <div class="uk-text-center uk-margin-large-bottom">
+                        <h2>Thank you for watching</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ea.</p>
+                    </div>
+                    <div>
+                        <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
+                            style="background-image: url('./img/room4.jpg');">
+                            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical uk-overlay uk-overlay-primary"
+                                uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">
+                                <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">Thank you for
+                                    watching</h1>
+                                <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="uk-margin-top">
+            <div class="uk-container-default">
+                <div class="uk-child-width-1-3" uk-grid>
+                    <div>
+                        <a href="" class="uk-margin-left" uk-icon="icon: uikit; ratio: 2"></a>
+                    </div>
+                    <div class="uk-text-center">
+                        <a href="" class="uk-icon-button uk-margin-small-right bg-color" uk-icon="twitter"></a>
+                        <a href="" class="uk-icon-button  uk-margin-small-right bg-color" uk-icon="facebook"></a>
+                        <a href="" class="uk-icon-button bg-color" uk-icon="google-plus"></a>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-default uk-align-right uk-margin-right"
+                            type="button">Menu</button>
+                        <div uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li class="uk-active"><a href="#">Home</a></li>
+                                <li class="uk-parent">
+                                    <a href="#">Info</a>
+                                    <ul class="uk-nav-sub">
+                                        <li class="uk-ctive"><a href="#"> Header Item</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Item2</a></li>
+                                        <li><a href="#">Item3</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li><a href="#">Us info</a></li>
+                                        <li><a href="#">link</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                    </ul>
+                                <li><a href="#">Sing in</a></li>
+                                <li><a href="#">Sing up</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"
+        integrity="sha256-AINUlF7RFhEIU37MsMWXfqC9AlpDnmW8xp1NUfEa8io=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"
+        integrity="sha256-T3+0YjpPZWQR6G5L8KOHWj/T6gGfMj1CPHDYDp0z3eE=" crossorigin="anonymous"></script>
+</body>
+
+</html>
